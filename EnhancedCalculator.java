@@ -13,16 +13,16 @@ public class EnhancedCalculator {
             int choice = getIntInput("Enter your choice: ");
             
             switch (choice) {
-                case 1: // Basic arithmetic
+                case 1:
                     performBasicArithmetic();
                     break;
-                case 2: // Scientific calculations
+                case 2: 
                     performScientificCalculations();
                     break;
-                case 3: // Unit conversions
+                case 3: 
                     performUnitConversions();
                     break;
-                case 4: // Exit
+                case 4: 
                     running = false;
                     System.out.println("Thank you for using Enhanced Calculator!");
                     break;
@@ -30,7 +30,7 @@ public class EnhancedCalculator {
                     System.out.println("Invalid choice. Please try again.");
             }
             
-            System.out.println(); // Add a blank line for better readability
+            System.out.println(); 
         }
         
         scanner.close();
@@ -113,7 +113,7 @@ public class EnhancedCalculator {
                     System.out.println("Invalid choice. Please try again.");
             }
             
-            System.out.println(); // Add a blank line for better readability
+            System.out.println(); 
         }
     }
     
@@ -133,22 +133,22 @@ public class EnhancedCalculator {
                         System.out.println("Square root of " + num + " = " + Math.sqrt(num));
                     }
                     break;
-                case 2: // Power
+                case 2: 
                     double base = getDoubleInput("Enter base: ");
                     double exponent = getDoubleInput("Enter exponent: ");
                     System.out.println(base + " raised to the power of " + exponent + " = " + Math.pow(base, exponent));
                     break;
-                case 3: // Sine
+                case 3: 
                     double angle = getDoubleInput("Enter angle in degrees: ");
                     double radians = Math.toRadians(angle);
                     System.out.println("Sine of " + angle + " degrees = " + Math.sin(radians));
                     break;
-                case 4: // Cosine
+                case 4: 
                     angle = getDoubleInput("Enter angle in degrees: ");
                     radians = Math.toRadians(angle);
                     System.out.println("Cosine of " + angle + " degrees = " + Math.cos(radians));
                     break;
-                case 5: // Logarithm
+                case 5: 
                     num = getDoubleInput("Enter a number: ");
                     if (num <= 0) {
                         System.out.println("Error: Cannot calculate logarithm of a non-positive number!");
@@ -156,14 +156,14 @@ public class EnhancedCalculator {
                         System.out.println("Logarithm (base 10) of " + num + " = " + Math.log10(num));
                     }
                     break;
-                case 6: // Return to main menu
+                case 6: 
                     returnToMainMenu = true;
                     break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
             
-            System.out.println(); // Add a blank line for better readability
+            System.out.println();
         }
     }
     
@@ -175,44 +175,44 @@ public class EnhancedCalculator {
             int choice = getIntInput("Enter your choice: ");
             
             switch (choice) {
-                case 1: // Celsius to Fahrenheit
+                case 1: 
                     double celsius = getDoubleInput("Enter temperature in Celsius: ");
                     double fahrenheit = (celsius * 9/5) + 32;
                     System.out.println(celsius + " °C = " + fahrenheit + " °F");
                     break;
-                case 2: // Fahrenheit to Celsius
+                case 2: 
                     fahrenheit = getDoubleInput("Enter temperature in Fahrenheit: ");
                     celsius = (fahrenheit - 32) * 5/9;
                     System.out.println(fahrenheit + " °F = " + celsius + " °C");
                     break;
-                case 3: // Meters to Feet
+                case 3: 
                     double meters = getDoubleInput("Enter length in meters: ");
                     double feet = meters * 3.28084;
                     System.out.println(meters + " meters = " + feet + " feet");
                     break;
-                case 4: // Feet to Meters
+                case 4: 
                     feet = getDoubleInput("Enter length in feet: ");
                     meters = feet / 3.28084;
                     System.out.println(feet + " feet = " + meters + " meters");
                     break;
-                case 5: // USD to EUR
+                case 5: 
                     double usd = getDoubleInput("Enter amount in USD: ");
                     double eur = usd * 0.85; // Using a fixed conversion rate
                     System.out.println(usd + " USD = " + eur + " EUR");
                     break;
-                case 6: // EUR to USD
+                case 6:
                     eur = getDoubleInput("Enter amount in EUR: ");
-                    usd = eur / 0.85; // Using a fixed conversion rate
+                    usd = eur / 0.85;
                     System.out.println(eur + " EUR = " + usd + " USD");
                     break;
-                case 7: // Return to main menu
+                case 7:
                     returnToMainMenu = true;
                     break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
             
-            System.out.println(); // Add a blank line for better readability
+            System.out.println(); 
         }
     }
     
